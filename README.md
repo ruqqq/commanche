@@ -4,6 +4,7 @@ Utility tool to help with configuring hipache redis configuration without having
 
 ### HOW TO USE WITH DOCKER
 
+	docker build -t commanche .
 	docker run -it --rm --link redis:redis commanche bash -c 'commanche -h $REDIS_PORT_6379_TCP_ADDR -add -f="domain.com"'
 
 ### COMMANDS
